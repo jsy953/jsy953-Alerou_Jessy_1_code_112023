@@ -1,0 +1,747 @@
+/****** General ***********/
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+:root {
+    --main-color: #0065FC;
+    --main-bg-color: #F2F2F2;
+    --filter-bg-color: #DEEBFF;
+}
+
+.fa-solid {
+    color: var(--main-color);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.section-title {
+    margin: 0;
+    font-size: 22px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.card img {
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 16px;
+}
+
+.euro {
+    font-weight: 700;
+}
+
+.neutral-star {
+    color: var(--main-bg-color)
+}
+
+/* HAEDER (haut de la page) */
+
+/* Boite numero 1 */
+
+.flex1 {
+    display: flex;
+    width: 100%;
+}
+
+.flex1 img {
+    margin-top: 20px;
+}
+
+.buttonHA {
+    display: flex;
+    width: 100%;
+}
+
+.buttonH {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.buttonH button {
+    background: #ffffff;
+    border: none;
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+    cursor: pointer;
+}
+
+.buttonH button:hover {
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+    cursor: pointer;
+}
+
+.buttonA {
+    display: flex;
+    margin-left: 50px;
+    justify-content: flex-end;
+    width: 104.83px;
+}
+
+.buttonA button {
+    background: #ffffff;
+    border: none;
+    width: 104.83px;
+}
+
+.buttonA button:hover {
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+    cursor: pointer;
+}
+
+/* Boite numero 2 */
+
+.flex2 {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.flexi {
+    display: flex;
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+    background: #F2F2F2;
+    border-radius: 15px 0 0 15px;
+}
+
+.flex2 input {
+    width: 185px;
+    border: 1px solid #F2F2F2;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.flex2  .contenu-changeant button {
+    height: 100%;
+    width: 150px;
+    background: #0065FC;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 0 15px 15px 0;
+}
+
+.flex2 .contenu-changeant i {
+    display: none;
+}
+
+.flex2 button:hover {
+    background: #0054fc;
+    cursor: pointer;
+}
+
+/* Boite numero 3 */
+
+.flex3 {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.flex3 button {
+    margin-left: 15px;
+    border-radius: 25px;
+    border: 2px solid #d5d5d5;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: #ffffff;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.flex3 button:hover {
+    background: #DEEBFF;
+    cursor: pointer;
+}
+
+.flex3 i {
+    margin-right: 7px;
+}
+
+/* Boite numero 4 */
+
+.flex4 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.flexi2 {
+    display: flex;
+    height: 15px;
+    width: 15px;
+    border: 1px solid #d5d5d5;
+    padding: 5px;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+/* MAIN (coeur de la page) */
+
+/****** Hebergements And Populaires ***********/
+.hebergements-and-populaires {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hebergements-and-populaires section {
+    background-color: var(--main-bg-color);
+    border-radius: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+
+/****** Hebergements ***********/
+.hebergements {
+    display: flex;
+    width: 65%;
+    overflow: auto;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    align-content: space-around;
+}
+
+
+.flexh {
+    display: flex;
+    width: 100%;
+    margin: 10px 0;
+    justify-content: center;
+}
+
+.flexh a {
+    width: 33%;
+    margin: 10px;
+}
+
+.flexh .card-txt h3 {
+    margin: 5px;
+    font-size: 15px;
+}
+ 
+.flexh .card-txt p {
+    margin: 5px;
+    font-size: 15px;
+}
+
+.flexh .card-rating  {
+    margin: 0 5px;
+}
+
+.flexh img {
+    width: 100%;
+    height: 136px;
+    overflow: hidden;
+    border-radius: 20px 20px 0 0;
+}
+
+.flexh-footer a {
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.flexh-footer a:hover  {
+    color: #0065FC;
+}
+
+
+/****** Populaires ***********/
+.populaires {
+    width: 32%;
+}
+
+.populaires-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.populaires-cards .card {
+    display: flex;
+    margin-top: 33px;
+}
+
+.populaires-cards img {
+    width: 33%;
+    height: 136px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.populaires-cards .card-content {
+    width: 67%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.populaires-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.populaires-cards .card-subtitle {
+    margin: 0;
+}
+
+.populaires-cards .card-rating {
+    margin-bottom: 5px;
+}
+
+/*Parti Activités a Marseilles*/
+
+/* Boite numero 5 */
+
+.flex5 {
+    height: 460px;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.flex5 a {
+    width: 25%;
+    overflow: hidden
+}
+
+.flex5 img {
+    height: 380px;
+    object-fit: cover;
+}
+
+.flex5 .fs img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.flex5 .f {
+    height: 439px;
+    margin: 15px;
+    overflow: hidden;
+    border: none;
+    border-radius: 15px;
+    box-shadow: rgb(223, 223, 223) -1px 0px 8px;
+}
+
+.flex5 .f:hover {
+    box-shadow: rgb(136 136 136) -1px 0px 8px;
+}
+
+.flex5 p {
+    display: flex;
+    font-size: 16px;
+    font-weight: bold;
+    justify-content: center;
+}
+
+/* Footer (bas de la page) */
+
+footer {
+    background: #F2F2F2;
+    padding: 20px;
+}
+
+/* Boite numero 6 */
+
+.flex6 {
+    display: flex;
+    width: 100%;
+}
+
+.flexp {
+    display: flex;
+    width: 33%;
+    flex-direction: column;
+}
+
+.flexp p {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+
+.flexp a {
+    margin: 7px 0;
+}
+
+.flexp a:hover {
+    color: #0065FC;
+}
+
+/* Le code ci-dessous correspond à la version responsive uniquement */
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (max-width: 1024px) {
+    .hebergements-and-populaires {
+        flex-direction: column;
+    }
+
+    .hebergements {
+        width: 100%;
+    }
+
+    .populaires {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .populaires-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .populaires-cards a {
+        width: 30%;
+    }
+
+    .populaires-cards .card-title {
+        font-size: 14px;
+    }
+
+    .populaires-cards .card-subtitle {
+        font-size: 13px;
+    }
+
+/* Modification sur la boite numero 5 (Activités à Marseilles) pour écran de tablette */
+
+    .flex5 {
+        height: 300px;
+        align-items: center;
+    }
+
+    .flex5 .f {
+        height: 270px;
+    }
+
+    .flex5 img {
+        height: 200px;
+    }
+
+    .flex5 p {
+        display: flex;
+        font-size: 16px;
+        font-weight: bold;
+        justify-content: center;
+    }
+}
+
+/* Small devices (phones, less than 768px) */
+
+@media (max-width: 767.98px) {
+/* Modification principale écran de smartphone */
+
+    .main-container {
+        padding: 0;
+    }
+
+    header {
+        padding: 0;
+    }
+
+    .top {
+        padding: 0 25px;
+    }
+
+/* Modification sur la boite numero 1 pour écran de smartphone */
+    
+    .flex1 {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .flex1 img {
+        margin: 20px;
+    }
+
+    .buttonHA {
+        display: flex;
+    }
+
+    .buttonH {
+        justify-content: center;
+        width: 50%;
+        margin: 0;
+    }
+
+
+    .buttonH button {
+        border-top: none;
+        border-bottom: 2px solid #F2F2F2;
+        padding: 0;
+        font-size: 15px;
+        height: 75px;
+        width: 100%;
+        margin: 0;
+        color: #0065FC;
+        border-top: none;
+        border-bottom: 2px solid #0065FC;
+        cursor: pointer;
+    }
+
+    .buttonH button:hover {
+        color: #0065FC;
+        border-top: none;
+        border-bottom: 2px solid #0065FC;
+        cursor: pointer;
+    }
+
+    .buttonA {
+        justify-content: center;
+        width: 50%;
+        margin: 0;
+    }
+
+    .buttonA button {
+        border-bottom: 2px solid #F2F2F2;
+        padding: 0;
+        font-size: 15px;
+        height: 75px;
+        width: 100%;
+        margin: 0;
+    }
+
+    .buttonA button:hover {
+        color: #0065FC;
+        border-top: none;
+        border-bottom: 2px solid #0065FC;
+        cursor: pointer;
+    }
+
+/* Modification sur la boite numero 2 pour écran de smartphone */
+
+    .flex2 {
+        position: relative;
+    }
+
+    .flex2 .flexi,
+    .flex2 input,
+    .flex2 .contenu-changeant {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .flex2 .flexi {
+        position: absolute;
+        width: 50px;
+        height: 100%;
+    }
+
+    .flex2 input {
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    .flex2 .contenu-changeant {
+        position: absolute;
+        right: 0;
+        width: 50px;
+        height: 100%;
+    }
+
+    .flex2  .contenu-changeant button {
+        display: none;
+    }
+    
+    .flex2 .contenu-changeant i {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        background: #0065FC;
+        border: none;
+        color: white;
+        font-size: 18px;
+        border-radius: 15px;
+        justify-content: center;
+        align-items: center;
+        box-shadow: rgb(148 147 147) 0px 3px 10px;
+    }
+    
+    .flex2 i:hover {
+        background: #0054fc;
+        cursor: pointer;
+    }
+
+/* Modification sur la boite numero 3 pour écran de smartphone */
+
+.flex3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "tx vi"
+    "i1 i2"
+    "i3 i4";
+}
+
+
+
+.flex3 button {
+    margin: 10px 0;
+    justify-items: center;
+}
+
+button, #Économique {
+    width: 90%;
+    grid-area: i1;
+}
+
+button, #Familial {
+    width: 90%;
+    grid-area: i2;
+}
+
+button, #Romantique {
+    width: 90%;
+    grid-area: i3;
+}
+
+button, #Nospépites {
+    width: 90%;
+    grid-area: i4;
+}
+
+.flex3 button {
+    width: 50%;
+}
+
+/* Modification sur la boite "hébergements-and-populaires" pour écran de smartphone */
+
+.hebergements-and-populaires {
+    flex-direction: column-reverse;
+}
+
+.hebergements-and-populaires section {
+    border-radius: 0;
+    background-color: transparent;
+}
+
+.hebergements-and-populaires .populaires {
+    background-color: #F2F2F2;
+}
+
+/* Modification sur la boite "hébergements" pour écran de smartphone */
+
+.hebergements {
+    width: 100%;
+    margin: 0;
+}
+
+.hebergements-title {
+    margin-bottom: 25px;
+}
+
+.hebergements .flexh {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 0;
+    margin: 0;
+}
+
+.hebergements .flexh a {
+    width: 96%;
+}
+
+.flexh-footer {
+    margin-top: 25px;
+}
+
+/* Modification sur la boite "populaires" pour écran de smartphone */
+
+
+.populaires {
+    margin-top: 0;
+    background-color: black;
+}
+
+.populaires-cards {
+    flex-direction: column;
+}
+
+.populaires-cards a {
+    width: 100%;
+}
+
+/* Modification sur la boite "flex5"(Activités à Marseilles) pour écran de smartphone */
+
+.flex5 {
+    flex-direction: column;
+    height: auto;
+}
+
+.flex5 .f {
+    height: 200px;
+}
+
+.flex5-txt {
+    padding: 0 15px;
+}
+
+.flex5 a {
+    width: 90%;
+}
+
+.flex5 .f img {
+    width: 100%;
+    height: 141px;
+}
+
+/* Modification sur la boite "flex6" pour écran de smartphone */
+
+.flex6 {
+    flex-direction: column;
+}
+
+.flexp {
+    width: 100%;
+    margin: 25px 0;
+}
+
+}
