@@ -116,6 +116,9 @@ a {
     cursor: pointer;
 }
 
+
+/* MAIN (coeur de la page) */
+
 /* Boite numero 2 */
 
 .flex2 {
@@ -213,7 +216,6 @@ a {
     margin-right: 10px;
 }
 
-/* MAIN (coeur de la page) */
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
