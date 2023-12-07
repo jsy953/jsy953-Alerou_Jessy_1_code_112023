@@ -349,50 +349,54 @@ a {
 
 /* Boite numero 5 */
 
-.flex5 {
-    height: 460px;
-    width: 100%;
-    display: flex;
-    overflow: hidden;
-    margin-bottom: 20px;
+.flex5{
+    padding: 30px;
+}
+
+.flex5-txt {
+    margin: 30px 0;
     align-items: center;
 }
 
-.flex5 a {
-    width: 25%;
-    overflow: hidden
-}
-
-.flex5 img {
-    height: 380px;
-    object-fit: cover;
-}
-
-.flex5 .fs img {
-    width: 100%;
-    object-fit: cover;
-}
-
-.flex5 .f {
+.flex5-card {
     height: 439px;
-    margin: 15px;
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    gap: 30px;
+}
+
+.flex5-card a {
+    width: 25%;
+    overflow: hidden;
+    height: 439px;
     overflow: hidden;
     border: none;
     border-radius: 15px;
     box-shadow: rgb(223, 223, 223) -1px 0px 8px;
 }
 
-.flex5 .f:hover {
+.flex5-card img {
+    height: 380px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.flex5-card a:hover {
     box-shadow: rgb(136 136 136) -1px 0px 8px;
 }
 
-.flex5 p {
+.flex5-card .little-txt {
     display: flex;
-    font-size: 16px;
     font-weight: bold;
-    justify-content: center;
+    height: 50px;
+    align-items: center;
 }
 
+.flex5-card p {
+   margin: 0 0 0 15px;
+}
 /* Footer (bas de la page) */
 
 footer {
