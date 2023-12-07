@@ -66,15 +66,18 @@ a {
 .flex1 {
     display: flex;
     width: 100%;
+    margin-bottom: 30px;
 }
 
 .flex1 img {
-    margin-top: 20px;
+    width: 58px;
+    height: 18px;
 }
 
 .buttonHA {
     display: flex;
     width: 100%;
+    height: 35px;
 }
 
 .buttonH {
@@ -119,14 +122,21 @@ a {
 
 /* MAIN (coeur de la page) */
 
+.top h2 {
+    margin: 10px 0;
+}
+
+.top p {
+    margin: 10px 0 ;
+}
+
 /* Boite numero 2 */
 
 .flex2 {
     display: flex;
     width: 100%;
     height: 50px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 30px 0; 
 }
 
 .flexi {
@@ -170,9 +180,8 @@ a {
 .flex3 {
     display: flex;
     align-items: center;
-    margin-top: 20px;
+    margin: 30px 0;
     font-weight: bold;
-    margin-bottom: 20px;
 }
 
 .flex3 button {
@@ -201,7 +210,11 @@ a {
 .flex4 {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin: 30px 0;
+}
+
+.flex4 p {
+    margin: 0;
 }
 
 .flexi2 {
