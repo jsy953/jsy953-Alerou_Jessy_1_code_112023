@@ -627,44 +627,18 @@ footer {
 /* Modification sur la boite numero 3 pour écran de smartphone */
 
 .flex3 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "tx vi"
-    "i1 i2"
-    "i3 i4";
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-
+.flex3 p {
+    width: 100%;
+}
 
 .flex3 button {
+    width: 48%;
     margin: 10px 0;
-    justify-items: center;
-}
-
-button, #Économique {
-    width: 90%;
-    grid-area: i1;
-}
-
-button, #Familial {
-    width: 90%;
-    grid-area: i2;
-}
-
-button, #Romantique {
-    width: 90%;
-    grid-area: i3;
-}
-
-button, #Nospépites {
-    width: 90%;
-    grid-area: i4;
-}
-
-.flex3 button {
-    width: 50%;
+    padding: 0;
 }
 
 /* Modification sur la boite "hébergements-and-populaires" pour écran de smartphone */
