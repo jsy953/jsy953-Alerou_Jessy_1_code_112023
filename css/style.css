@@ -189,8 +189,7 @@ a {
     border-radius: 25px;
     border: 2px solid #d5d5d5;
     height: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0 2%;
     background: #ffffff;
     font-weight: bold;
     font-size: 15px;
@@ -395,7 +394,7 @@ a {
 }
 
 .flex5-card p {
-   margin: 0 0 0 15px;
+   margin: 0 15px;
 }
 /* Footer (bas de la page) */
 
