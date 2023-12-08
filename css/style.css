@@ -80,6 +80,10 @@ a {
     height: 35px;
 }
 
+nav {
+    width: 100%;
+}
+
 .buttonH {
     display: flex;
     width: 100%;
@@ -254,7 +258,6 @@ a {
     justify-content: space-between;
     align-content: space-around;
 }
-
 
 .flexh {
     display: flex;
@@ -650,6 +653,7 @@ footer {
 .hebergements-and-populaires section {
     border-radius: 0;
     background-color: transparent;
+    padding: 20px;
 }
 
 .hebergements-and-populaires .populaires {
@@ -673,10 +677,11 @@ footer {
     width: 100%;
     border-radius: 0;
     margin: 0;
+    align-items: center;
 }
 
 .hebergements .flexh a {
-    width: 96%;
+    width: 100%;
 }
 
 .flexh-footer {
@@ -710,12 +715,9 @@ footer {
     height: 200px;
 }
 
-.flex5-txt {
-    padding: 0 15px;
-}
 
 .flex5-card a {
-    width: 90%;
+    width: 100%;
 }
 
 .flex5-card img {
