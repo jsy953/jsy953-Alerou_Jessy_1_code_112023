@@ -61,33 +61,31 @@ a {
 
 /* HAEDER (haut de la page) */
 
+.boite1, .buttonHA, #buttonH, #buttonA {
+    display: flex;
+}
+
+.boite1, .buttonHA, nav {
+    width: 100%;
+}
+
 /* Boite numero 1 */
 
-.flex1 {
-    display: flex;
-    width: 100%;
+.boite1 {
     margin-bottom: 30px;
 }
 
-.flex1 img {
+.boite1 img {
     width: 61px;
     height: 19px;
 }
 
 .buttonHA {
-    display: flex;
-    width: 100%;
     height: 35px;
     justify-content: flex-end;
 }
 
-nav {
-    width: 100%;
-}
-
-#buttonH,
-#buttonA {
-    display: flex;
+#buttonH, #buttonA {
     width: 105px;
 }
 
@@ -95,8 +93,7 @@ nav {
     margin-left: 50px;
 }
 
-#buttonH button,
-#buttonA button {
+#buttonH button, #buttonA button {
     background: #ffffff;
     border: none;
     width: 105px;
@@ -108,8 +105,7 @@ nav {
     cursor: pointer;
 }
 
-#buttonH button:hover,
-#buttonA button:hover {
+#buttonH button:hover, #buttonA button:hover {
     color: #0065FC;
     border-top: 2px solid #0065FC;
     cursor: pointer;
@@ -117,30 +113,37 @@ nav {
 
 /* MAIN (coeur de la page) */
 
-.top h2,
-.top p {
+.top h2, .top p {
     margin: 10px 0;
+}
+
+.boite2, #boitei, .boite3, .boite4, #boitei2 {
+    display: flex;
+}
+
+#boitei, .boite3, .boite4, #boitei2 {
+    align-items: center;
+}
+
+#boitei, #boitei2 {
+    justify-content: center;
 }
 
 /* Boite numero 2 */
 
-.flex2 {
-    display: flex;
+.boite2 {
     width: 100%;
     height: 50px;
     margin: 30px 0; 
 }
 
-#flexi {
-    display: flex;
+#boitei {
     width: 50px;
-    align-items: center;
-    justify-content: center;
     background: #F2F2F2;
     border-radius: 15px 0 0 15px;
 }
 
-.flex2 input {
+.boite2 input {
     width: 185px;
     border: 1px solid #F2F2F2;
     text-align: center;
@@ -148,7 +151,7 @@ nav {
     font-weight: bold;
 }
 
-.flex2  .contenu-changeant button {
+.boite2  .contenu-changeant button {
     height: 100%;
     width: 150px;
     background: #0065FC;
@@ -158,68 +161,60 @@ nav {
     border-radius: 0 15px 15px 0;
 }
 
-.flex2 .contenu-changeant i {
+.boite2 .contenu-changeant i {
     display: none;
 }
 
-.flex2 button:hover {
+.boite2 button:hover {
     background: #0054fc;
     cursor: pointer;
 }
 
 /* Boite numero 3 */
 
-.flex3 {
-    display: flex;
-    align-items: center;
+.boite3 {
     margin: 30px 0;
     font-weight: bold;
 }
 
-.flex3 button {
-    margin-left: 15px;
+.boite3 button {
+    margin-left: 2%;
     border-radius: 25px;
     border: 2px solid #d5d5d5;
     height: 50px;
-    padding: 0 2%;
+    padding: 0 20px;
     background: #ffffff;
     font-weight: bold;
     font-size: 15px;
 }
 
-.flex3 button:hover {
+.boite3 button:hover {
     background: #DEEBFF;
     cursor: pointer;
 }
 
-.flex3 i {
+.boite3 i {
     margin-right: 7px;
 }
 
 /* Boite numero 4 */
 
-.flex4 {
-    display: flex;
-    align-items: center;
+.boite4 {
     margin: 30px 0;
 }
 
-.flex4 p {
+.boite4 p {
     margin: 0;
 }
 
-#flexi2 {
-    display: flex;
+#boitei2 {
     height: 15px;
     width: 15px;
     border: 1px solid #d5d5d5;
     padding: 5px;
-    border-radius: 15px;
-    align-items: center;
-    justify-content: center;
     margin-right: 10px;
+    border-radius: 15px;
 }
-
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
@@ -247,41 +242,41 @@ nav {
     align-content: space-around;
 }
 
-.flexh {
+.boiteh {
     display: flex;
     width: 100%;
     margin: 10px 0;
     justify-content: center;
 }
 
-.flexh a {
+.boiteh a {
     width: 33%;
     margin: 10px;
 }
 
-.flexh .card-txt h3,
-.flexh .card-txt p {
+.boiteh .card-txt h3,
+.boiteh .card-txt p {
     margin: 5px;
     font-size: 15px;
 }
 
-.flexh .card-rating  {
+.boiteh .card-rating  {
     margin: 0 5px;
 }
 
-.flexh img {
+.boiteh img {
     width: 100%;
     height: 136px;
     overflow: hidden;
     border-radius: 20px 20px 0 0;
 }
 
-.flexh-footer a {
+.boiteh-footer a {
     margin-top: 5px;
     font-weight: bold;
 }
 
-.flexh-footer a:hover  {
+.boiteh-footer a:hover  {
     color: #0065FC;
 }
 
@@ -335,16 +330,16 @@ nav {
 
 /* Boite numero 5 */
 
-.flex5{
+.boite5{
     padding: 30px;
 }
 
-#flex5-txt {
+#boite5-txt {
     margin: 30px 0;
     align-items: center;
 }
 
-.flex5-card {
+.boite5-card {
     height: 439px;
     width: 100%;
     display: flex;
@@ -353,7 +348,7 @@ nav {
     gap: 30px;
 }
 
-.flex5-card a {
+.boite5-card a {
     width: 25%;
     overflow: hidden;
     height: 439px;
@@ -363,24 +358,24 @@ nav {
     box-shadow: rgb(223, 223, 223) -1px 0px 8px;
 }
 
-.flex5-card img {
+.boite5-card img {
     height: 380px;
     object-fit: cover;
     width: 100%;
 }
 
-.flex5-card a:hover {
+.boite5-card a:hover {
     box-shadow: rgb(136 136 136) -1px 0px 8px;
 }
 
-.flex5-card .little-txt {
+.boite5-card .little-txt {
     display: flex;
     font-weight: bold;
     height: 50px;
     align-items: center;
 }
 
-.flex5-card p {
+.boite5-card p {
    margin: 0 15px;
 }
 
@@ -393,28 +388,28 @@ footer {
 
 /* Boite numero 6 */
 
-.flex6 {
+.boite6 {
     display: flex;
     width: 100%;
 }
 
-.flexp {
+.boitep {
     display: flex;
     width: 33%;
     flex-direction: column;
 }
 
-.flexp p {
+.boitep p {
     font-weight: bold;
     font-size: 20px;
     margin: 0 0 10px 0;
 }
 
-.flexp a {
+.boitep a {
     margin: 7px 0;
 }
 
-.flexp a:hover {
+.boitep a:hover {
     color: #0065FC;
 }
 
@@ -453,23 +448,33 @@ footer {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+/*Modification sur la boite numero 3 pour écran de tablette */
+
+    .boite3 {
+        flex-wrap: wrap;
+    }
+
+    .boite3 p {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 
 /* Modification sur la boite numero 5 (Activités à Marseilles) pour écran de tablette */
 
-    .flex5-card {
+    .boite5-card {
         height: 270px;
         align-items: center;
     }
 
-    .flex5-card a {
+    .boite5-card a {
         height: 270px;
     }
 
-    .flex5-card img {
+    .boite5-card img {
         height: 200px;
     }
 
-    .flex5-card .little-txt {
+    .boite5-card .little-txt {
         height: 60px;
     }
 }
@@ -493,13 +498,13 @@ footer {
 
 /* Modification sur la boite numero 1 pour écran de smartphone */
     
-    .flex1 {
+    .boite1 {
         flex-direction: column;
         align-items: center;
         padding: 0;
     }
 
-    .flex1 h1 {
+    .boite1 h1 {
         margin-top: 20px;
         margin-bottom: 10px;
     }
@@ -547,40 +552,40 @@ footer {
 
 /* Modification sur la boite numero 2 pour écran de smartphone */
 
-    .flex2 {
+    .boite2 {
         position: relative;
     }
 
-    .flex2 #flexi,
-    .flex2 input,
-    .flex2 .contenu-changeant {
+    .boite2 #boitei,
+    .boite2 input,
+    .boite2 .contenu-changeant {
         width: 100%;
         box-sizing: border-box;
     }
 
-    .flex2 #flexi {
+    .boite2 #boitei {
         position: absolute;
         width: 50px;
         height: 100%;
     }
 
-    .flex2 input {
+    .boite2 input {
         width: 100%;
         border-radius: 15px;
     }
 
-    .flex2 .contenu-changeant {
+    .boite2 .contenu-changeant {
         position: absolute;
         right: 0;
         width: 50px;
         height: 100%;
     }
 
-    .flex2  .contenu-changeant button {
+    .boite2  .contenu-changeant button {
         display: none;
     }
     
-    .flex2 .contenu-changeant i {
+    .boite2 .contenu-changeant i {
         display: flex;
         height: 100%;
         width: 100%;
@@ -594,23 +599,23 @@ footer {
         box-shadow: rgb(148 147 147) 0px 3px 10px;
     }
     
-    .flex2 i:hover {
+    .boite2 i:hover {
         background: #0054fc;
         cursor: pointer;
     }
 
 /* Modification sur la boite numero 3 pour écran de smartphone */
 
-.flex3 {
+.boite3 {
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.flex3 p {
+.boite3 p {
     width: 100%;
 }
 
-.flex3 button {
+.boite3 button {
     width: 48%;
     margin: 10px 0;
     padding: 0;
@@ -643,7 +648,7 @@ footer {
     margin-bottom: 25px;
 }
 
-.hebergements .flexh {
+.hebergements .boiteh {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -652,11 +657,11 @@ footer {
     align-items: center;
 }
 
-.hebergements .flexh a {
+.hebergements .boiteh a {
     width: 100%;
 }
 
-.flexh-footer {
+.boiteh-footer {
     margin-top: 25px;
 }
 
@@ -678,32 +683,32 @@ footer {
 
 /* Modification sur la boite "flex5"(Activités à Marseilles) pour écran de smartphone */
 
-.flex5-card {
+.boite5-card {
     flex-direction: column;
     height: auto;
 }
 
-.flex5-card a {
+.boite5-card a {
     height: 200px;
 }
 
 
-.flex5-card a {
+.boite5-card a {
     width: 100%;
 }
 
-.flex5-card img {
+.boite5-card img {
     width: 100%;
     height: 141px;
 }
 
 /* Modification sur la boite "flex6" pour écran de smartphone */
 
-.flex6 {
+.boite6 {
     flex-direction: column;
 }
 
-.flexp {
+.boitep {
     width: 100%;
     margin: 25px 0;
 }
